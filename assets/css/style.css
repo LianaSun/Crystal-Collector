@@ -1,0 +1,61 @@
+body {
+    background-image: url ("background.jpg");
+    font-family:'Felipa', cursive;
+}
+
+header {
+    margin-right:auto;
+    margin-left:auto;
+    background-color: orchid;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.crystals {
+    display: inline-block;
+    margin: auto;
+    height: 200px;
+}
+
+#directions {
+    background: pink;
+    text-align: center;
+    color: black;
+    margin: 25px;
+    line-height: 2;
+    padding: 10;
+}
+
+#guess {
+    background: lightseagreen;
+    width: 35%;
+    padding: 65px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+#play {
+    background-color: lightsalmon;
+    width: 35%;
+    height: 125px;
+    padding: 65px;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.winlose {
+    background-color: lightslategray;
+    width: 35%;
+    height: 125px;
+    padding: 65px;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.scoreboard {
+    display:flex;
+}
