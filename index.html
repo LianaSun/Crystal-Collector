@@ -2,9 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Crystal Collector JQuery Game- Bootcamp 2019</title>
+        <title>Crystal Collector Game- Bootcamp 2019</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" type= "text/css" href="assets/css/style.css">
-        <link rel="stylesheet" type= "text/css" href="assets/css/reset.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
 
@@ -17,22 +18,22 @@
     <div id="directions">
         <p>You will be given a RANDOM number at the start of each round</p>
         <p>There are FOUR Crystals below. Clicking on a crystal will add a specific number of points to your total score</p>
-        <p>Win by matching YOUR totl score to the random number. If you go OVER the random number, you lose!</p>
+        <p>Win by matching YOUR total score to the random number. If you go OVER the random number, you lose!</p>
         <p>The VALUE of each crystal is HIDDEN until you click on it</p>
         <p>Each time the game resets, the value of the crystal will CHANGE</p>
-        <p>Make sense? If not, start the game and see if you can figure it out by doing!</p>
-        <p>GOOD LUCK!</p>
+        <p>Make sense?</p>
+        <p>YOU GOT THIS! GOOD LUCK!</p>
     </div>
 
     <div id="crystalDiv">
-        <img id="blueCrystal" class="crystals" width="325" height= "450" src="assets/images/blue.jpg">
-        <img id="whiteCrystal" class="crystals" width="325" height="450" src="assets/images/white.jpg">
-        <img id="pinkCrystal" class="crystals" width="325" height= "450" src="assets/images/pink.jpg">
-        <img id="purpleCrystal" class="crystals" width="325" height="450" src="assets/images/purple.jpg">
+        <img id="blueCrystal" class="crystals" width="325" height= "600" src="assets/images/blue.jpg">
+        <img id="whiteCrystal" class="crystals" width="325" height="600" src="assets/images/white.jpg">
+        <img id="pinkCrystal" class="crystals" width="325" height= "600" src="assets/images/pink.jpg">
+        <img id="purpleCrystal" class="crystals" width="325" height="600" src="assets/images/purple.jpg">
     </div>
 
     <div class="scoreboard">
-        <h2 id="guess">Guess the Number:<span id="target"></span></h2>
+        <h2 id="guess">Number:<span id="target"></span></h2>
         <h2 id="play">Player Score:<span id="playerScore"></span></h2>
 
             <div class="winlose">
@@ -41,8 +42,8 @@
             </div>
     </div>
 
-    <script type="text/javascript" src="assets/javascript/javaScript.js"></script>
-
+    <script src="assets/javascript/game.js"></script>
+   
     </body>
 
     </head>

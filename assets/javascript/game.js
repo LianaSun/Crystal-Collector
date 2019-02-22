@@ -1,66 +1,65 @@
-$(document.readyState(function()) {
+$(document).ready(function() {
 
-    //iables
+    //Variables//
 
     var counter = 0;
     var wins = 0;
     var losses = 0;
 
-    function randomNum(min,max){
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max-min +1)) + min;
+    function randomNum(){
+        return Math.floor(Math.random() * 102) + 19;
+    
     }
 
-    var targetNumber =randomNum(40,90);
-    $(#"target").html(targetNumber);
+    var targetNumber = randomNum(40,90);
+    $("#target").html(targetNumber);
 
-    var crystalOne = randomNum(1, 12);
-    var crystalTwo = randomNum(1, 12);
-    var crystalThree = randomNum(1, 12);
-    var crystalFour = randomNum(1, 12);
+    var crystalOne = Math.floor(Math.random() * 12) + 1;
+    var crystalTwo = Math.floor(Math.random() * 12) + 1;
+    var crystalThree = Math.floor(Math.random() * 12) + 1;
+    var crystalFour =  Math.floor(Math.random() * 12) + 1;
 
     function reset(){
         counter = 0;
         $("#target").html(targetNumber);
         targetNumber = randomNum (40,90);
         $("#playerScore").text(counter);
-        crystalOne = randomNum(1, 12);
-        crystalTwo = randomNum(1, 12);
-        crystalThree = randomNum(1, 12);
-        crystalFour = randomNum(1, 12);
+        crystalOne = Math.floor(Math.random() * 12) + 1;
+        crystalTwo = Math.floor(Math.random() * 12) + 1;
+        crystalThree = Math.floor(Math.random() * 12) + 1;
+        crystalFour = Math.floor(Math.random() * 12) + 1;
 
     }
 
-    $(#blueCrystal).on("click", function() {
+    $("#blueCrystal").on("click", function() {
         counter += crystalOne;
-        WinLose();
+        winLose();
         $(playerScore).text(counter);
     });
 
-    $(#whiteCrystal).on("click", function() {
+    $("#whiteCrystal").on("click", function() {
         counter += crystalTwo;
-        WinLose();
+        winLose();
         $(playerScore).text(counter);
     });
 
-    $(#pinkCrystal).on("click", function() {
+    $("#pinkCrystal").on("click", function() {
         counter += crystalThree;
-        WinLose();
+        winLose();
         $(playerScore).text(counter);
     });
 
 
-    $(#purpleCrystal).on("click", function() {
+    $("#purpleCrystal").on("click", function() {
         counter += crystalFour;
-        WinLose();
+        winLose();
         $(playerScore).text(counter);
     });
         
-    function WinLose () {
+    function winLose () {
 
         if (counter === targetNumber) {
-            wins += ;
+            wins ++;
             alert("YOU WIN!!!! YOU'RE AMAZING!");
             $(win).text(wins);
             reset();
